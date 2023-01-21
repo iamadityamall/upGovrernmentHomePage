@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary_color: "white";
+  --secondary_color: "red";
+  --ternary_color: #fd7f20;
+  --white: #fff;
+  --navbarButton: #010100;
+  --gray: #eeeeee;
+  --darkgray: #6d6d6d;
+  --primary_font: "Poppins", sans-serif;
+  --gradientOne: linear-gradient(
+    233.19deg,
+    #8ec850 -256.88%,
+    #428dcb -167.3%,
+    #2ab998 -81.23%,
+    #c2579b -2.2%,
+    #ec7026 80.36%
+  );
+  --boxShadowVeryLight: 0.25px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.15);
+  --boxShadowNavbar: 0 0.5px 5px 1px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  font-family: var(--primary_font);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+figure {
+  overflow: hidden;
+}
+
+.section {
+  width: 95vw;
+  margin: auto;
+}
+
+/* ========================================================================================= */
+/* Mobile Screen */
+/* 320px — 480px: Mobile devices */
+/* ========================================================================================= */
+
+/* navbar section */
+nav {
+  background: var(--gradientOne);
+}
+
+.navbarOne {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 0.25rem 0 0.25rem 0;
+  background: var(--gradientOne);
+}
+
+.navbarOne .leftContainer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 0.5rem;
+}
+
+.navbarOne .leftContainer figure {
+  height: 1.5rem;
+  align-self: center;
+  border-radius: 2px;
+  box-shadow: var(--boxShadowVeryLight);
+}
+
+.navbarOne .leftContainer p {
+  display: none;
+  font-size: 10px;
+  color: var(--white);
+  font-family: var(--primary_font);
+  font-weight: bold;
+}
+
+.navbarOne .rightContainer {
+  justify-self: flex-end;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+
+.navbarOne .rightContainer a {
+  color: var(--white);
+  padding: 0.25rem;
+  border-right: 1px solid var(--white);
+  font-size: 12px;
+  font-family: var(--primary_font);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbarOne .rightContainer a:first-child {
+  display: none;
+}
+
+/* navbar two */
+
+#navTwo {
+  background: var(--white);
+  box-shadow: var(--boxShadowNavbar);
+}
+
+.navbarTwo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: var(--white);
+}
+
+.navbarTwo .figureContainer {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+.navbarTwo .figureContainer figure {
+  width: 5rem;
+}
+
+.navbarTwo .linksContainer {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-content: space-between;
+}
+.navbarTwo .linksContainer a {
+  font-size: 1.25rem;
+  color: var(--ternary_color);
+}
+
+.navbarTwo .linksContainer button {
+  border: none;
+  font-size: 1.25rem;
+  background: var(--navbarButton);
+  padding: 0.5rem;
+  border-radius: 2px;
+  color: var(--white);
+  box-shadow: var(--boxShadowVeryLight);
+}
+
+/* navbar two end*/
+
+/* sidebarmenu starts*/
+
+.sidebarmenu {
+  background: var(--gray);
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.sidebarmenu .sidebarmenu__ulOne li {
+  list-style: none;
+  display: grid;
+  padding: 0.5rem;
+}
+
+.sidebarmenu .sidebarmenu__ulOne li a {
+  text-decoration: none;
+  color: var(--darkgray);
+  font-weight: bold;
+}
+
+/* .sidebarmenu .sidebarmenu__ulOne li .submenu {
+  padding: 0.25rem;
+} */
+
+.sidebarmenu .sidebarmenu__ulOne .submenu .sidebarmenu__ulTwo {
+  padding: 0.75rem;
+}
+
+/* .sidebarmenu .sidebarmenu__ulOne .submenu .sidebarmenu__ulTwo .subSubmenu {
+
+} */
+
+.sidebarmenu
+  .sidebarmenu__ulOne
+  .submenu
+  .sidebarmenu__ulTwo
+  .subSubmenu
+  .sidebarmenu__ulThree {
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  font-size: 0.85rem;
+}
+
+.sidebarmenu__ulThree li a {
+  font-size: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 3px;
+  background:rgba(0, 0, 0, 0.15);
+}
+
+.sidebarmenu__ulFour {
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+
+.sidebarmenu__ulFour li a {
+  font-size: 0.85rem;
+  padding: 0.5rem;
+  border-radius: 3px;
+  background:rgba(0, 0, 0, 0.15)
+}
+
+#linkOne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#linkOne_one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+#linkOne_two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+.active {
+  transition: all 2000ms;
+  display: grid;
+}
+
+.inactive {
+  transition: all 2000ms;
+  display: none;
+}
+
+/* sidebarmenu ends */
+
+/* ========================================================================================= */
+/* Tablet Screen */
+/* 481px — 768px: iPads, Tablets */
+/* ========================================================================================= */
+
+/* media query 481px — 768px: iPads, Tablets*/
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .section {
+    width: 90vw;
+    margin: auto;
+  }
+
+  /* navbar start */
+  .navbarOne .leftContainer p {
+    display: grid;
+  }
+
+  .navbarOne .rightContainer a:first-child {
+    display: grid;
+  }
+  /* navbar end */
+
+  /* navbar two */
+
+  #navTwo {
+    background: var(--white);
+    box-shadow: var(--boxShadowNavbar);
+  }
+
+  .navbarTwo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: var(--white);
+  }
+
+  .navbarTwo .figureContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: flex-start;
+    column-gap: 1rem;
+  }
+
+  .navbarTwo .figureContainer figure {
+    width: 6rem;
+  }
+
+  .navbarTwo .linksContainer {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 0.25rem;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .navbarTwo .linksContainer a {
+    font-size: 2rem;
+    color: var(--ternary_color);
+    padding: 1rem;
+  }
+
+  .navbarTwo .linksContainer button {
+    border: none;
+    font-size: 1.25rem;
+    background: var(--navbarButton);
+    padding: 0.75rem;
+    border-radius: 2px;
+    color: var(--white);
+    box-shadow: var(--boxShadowVeryLight);
+  }
+
+  /* navbar two end*/
+}
+
+/* ========================================================================================= */
+/* Laptop Screen */
+/* 769px — 1024px: Small screens, laptops */
+/* ========================================================================================= */
+
+/* media query 769px — 1024px: Small screens, laptops*/
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .section {
+    width: 85vw;
+    margin: auto;
+  }
+
+  /* navbar start */
+  .navbarOne .leftContainer p {
+    display: grid;
+  }
+
+  .navbarOne .rightContainer a:first-child {
+    display: grid;
+  }
+  /* navbar end */
+}
+
+/* ========================================================================================= */
+/* Large Screen */
+/* 1025px — 1200px: Desktops, large screens */
+/* ========================================================================================= */
+
+/* media query 1025px — 1200px: Desktops, large screens*/
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+  .section {
+    width: 80vw;
+  }
+
+  /* navbar start */
+  .navbarOne .leftContainer p {
+    display: grid;
+  }
+
+  .navbarOne .rightContainer a:first-child {
+    display: grid;
+  }
+  /* navbar end */
+}
+
+/* ========================================================================================= */
+/* Extra large Screen */
+/* 1201px and more —  Extra large screens, TV */
+/* ========================================================================================= */
+
+/* media query 1201px and more —  Extra large screens, TV*/
+@media screen and (max-width: 1440px) and (min-width: 1201px) {
+  .section {
+    width: 75vw;
+  }
+
+  /* navbar start */
+  .navbarOne .leftContainer p {
+    display: grid;
+  }
+
+  .navbarOne .rightContainer a:first-child {
+    display: grid;
+  }
+  /* navbar end */
+}
+
+/* ========================================================================================= */
+/* Extra Extra large Screen */
+/* 1440px and more —  Extra large screens, TV */
+/* ========================================================================================= */
+
+/* media query 1440px and more —  Extra large screens, TV*/
+@media screen and (min-width: 1440px) {
+  .section {
+    width: 70vw;
+  }
+
+  /* navbar start */
+  .navbarOne .leftContainer p {
+    display: grid;
+  }
+
+  .navbarOne .rightContainer a:first-child {
+    display: grid;
+  }
+  /* navbar end */
+}
