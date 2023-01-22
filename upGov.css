@@ -135,6 +135,15 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
+.linksContainer .links {
+  display: none;
+}
+
+.linksContainerUl {
+  display: none;
+}
+
 .navbarTwo .linksContainer a {
   font-size: 1.25rem;
   color: var(--ternary_color);
@@ -198,7 +207,7 @@ nav {
   font-size: 0.75rem;
   padding: 0.5rem;
   border-radius: 3px;
-  background:rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .sidebarmenu__ulFour {
@@ -209,7 +218,7 @@ nav {
   font-size: 0.85rem;
   padding: 0.5rem;
   border-radius: 3px;
-  background:rgba(0, 0, 0, 0.15)
+  background: rgba(0, 0, 0, 0.15);
 }
 
 #linkOne {
@@ -336,7 +345,163 @@ nav {
   .navbarOne .rightContainer a:first-child {
     display: grid;
   }
+
+  /* navbar two */
+
+  #navTwo {
+    background: var(--white);
+    box-shadow: var(--boxShadowNavbar);
+  }
+
+  .navbarTwo {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background: var(--white);
+    column-gap: 2rem;
+  }
+
+  .navbarTwo .figureContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: flex-start;
+    column-gap: 0.5rem;
+  }
+
+  .navbarTwo .figureContainer figure {
+    width: 6rem;
+  }
+
+  .navbarTwo .linksContainer {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    column-gap: 0.25rem;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .linksContainer .links {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+  }
+
+  .linksContainer .links li {
+    font-size: 12px;
+    list-style-type: none;
+    justify-self: center;
+  }
+
+  .navbarTwo .linksContainer a {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--ternary_color);
+    padding: 1rem;
+  }
+
+  .navbarTwo .linksContainer button {
+    border: none;
+    font-size: 1.25rem;
+    background: var(--navbarButton);
+    padding: 0.75rem;
+    border-radius: 2px;
+    color: var(--white);
+    box-shadow: var(--boxShadowVeryLight);
+  }
+
+  /* navbar two end*/
+
+  /* sidebar */
+  .sidebarmenu {
+    display: none;
+  }
+
+  #sidebarButton {
+    display: none;
+  }
+
   /* navbar end */
+
+  /* large screen links */
+  .linksContainerUl {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+  }
+
+  .linksContainerUlLi {
+    list-style-type: none;
+    padding: 1rem;
+  }
+
+  .linksContainerUlLi a {
+    padding: 1rem;  
+    text-underline-offset: 5px;
+    color: var(--darkgray) !important;
+    font-size: 0.5rem !important;
+  }
+
+  .linksContainerUlLi a:hover {
+    color: black !important;
+  }
+
+  #linksContainerUlLiOne {
+    position: relative;
+    display: grid;
+  }
+
+  /* products one */
+  .productsOne {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: white;
+    box-shadow: var(--boxShadowVeryLight);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .linksContainerUlLi:first-child:hover .productsOne {
+    display: grid !important;
+  }
+
+  .productsOneUl {
+    display: grid;
+  }
+
+  .productsOneUl li {
+    list-style: none;
+  }
+
+  .productsOneUl li:first-child:hover .insuranceProducts {
+    display: grid;
+  }
+  .productsOneUl li:first-child:hover .ekycProducts {
+    display: grid;
+  }
+
+  .productsOneUl li a {
+    padding: 1rem 2rem 1rem 2rem !important;
+    display: block;
+  }
+
+  .insuranceProductsUl li a,
+  .ekycProductsUl li a {
+    color: blue !important;
+    margin-left: 1rem;
+  }
+
+  .insuranceProductsUl li a:hover,
+  .productsOneUl li a:hover,
+  .ekycProductsUl li a:hover {
+    background: rgba(0, 0, 0, 0.15);
+    border-left: 2px solid orange;
+  }
+
+  .insuranceProducts,
+  .ekycProducts {
+    display: grid;
+  }
 }
 
 /* ========================================================================================= */
@@ -358,7 +523,167 @@ nav {
   .navbarOne .rightContainer a:first-child {
     display: grid;
   }
+
+  /* navbar two */
+
+  #navTwo {
+    padding: 1rem;
+    background: var(--white);
+    box-shadow: var(--boxShadowNavbar);
+  }
+
+  .navbarTwo {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background: var(--white);
+  }
+
+  .navbarTwo .figureContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: flex-start;
+    column-gap: 1rem;
+  }
+
+  .navbarTwo .figureContainer figure {
+    width: 6rem;
+  }
+
+  .navbarTwo .linksContainer {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    column-gap: 0.25rem;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .linksContainer .links {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+  }
+
+  .linksContainer .links li {
+    font-size: 12px;
+    list-style-type: none;
+    justify-self: center;
+  }
+
+  .navbarTwo .linksContainer a {
+    font-size: 0.75rem;
+    color: var(--ternary_color);
+    padding: 1rem;
+    font-weight: bold;
+  }
+
+  #lin {
+    font-size: 1.75rem;
+  }
+
+  .navbarTwo .linksContainer button {
+    border: none;
+    font-size: 1.25rem;
+    background: var(--navbarButton);
+    padding: 0.75rem;
+    border-radius: 2px;
+    color: var(--white);
+    box-shadow: var(--boxShadowVeryLight);
+  }
+
+  /* navbar two end*/
+
+  /* sidebar */
+  .sidebarmenu {
+    display: none;
+  }
+
+  #sidebarButton {
+    display: none;
+  }
+
   /* navbar end */
+
+  /* large screen links */
+  .linksContainerUl {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+  }
+
+  .linksContainerUlLi {
+    list-style-type: none;
+    padding: 1rem;
+  }
+
+  .linksContainerUlLi a {
+    padding: 1rem;
+    text-underline-offset: 5px;
+    color: var(--darkgray) !important;
+    font-size: 1rem !important;
+  }
+
+  .linksContainerUlLi a:hover {
+    color: black !important;
+  }
+
+  #linksContainerUlLiOne {
+    position: relative;
+    display: grid;
+  }
+
+  /* products one */
+  .productsOne {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: white;
+    box-shadow: var(--boxShadowVeryLight);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .linksContainerUlLi:first-child:hover .productsOne {
+    display: grid !important;
+  }
+
+  .productsOneUl {
+    display: grid;
+  }
+
+  .productsOneUl li {
+    list-style: none;
+  }
+
+  .productsOneUl li:first-child:hover .insuranceProducts {
+    display: grid;
+  }
+  .productsOneUl li:first-child:hover .ekycProducts {
+    display: grid;
+  }
+
+  .productsOneUl li a {
+    padding: 1rem 2rem 1rem 2rem !important;
+    display: block;
+  }
+
+  .insuranceProductsUl li a,
+  .ekycProductsUl li a {
+    color: blue !important;
+    margin-left: 1rem;
+  }
+
+  .insuranceProductsUl li a:hover,
+  .productsOneUl li a:hover,
+  .ekycProductsUl li a:hover {
+    background: rgba(0, 0, 0, 0.15);
+    border-left: 2px solid orange;
+  }
+
+  .insuranceProducts,
+  .ekycProducts {
+    display: grid;
+  }
 }
 
 /* ========================================================================================= */
@@ -380,7 +705,166 @@ nav {
   .navbarOne .rightContainer a:first-child {
     display: grid;
   }
+
+  /* navbar two */
+
+  #navTwo {
+    background: var(--white);
+    box-shadow: var(--boxShadowNavbar);
+    padding: 1rem;
+  }
+
+  .navbarTwo {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background: var(--white);
+  }
+
+  .navbarTwo .figureContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: flex-start;
+    column-gap: 1rem;
+  }
+
+  .navbarTwo .figureContainer figure {
+    width: 6rem;
+  }
+
+  .navbarTwo .linksContainer {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    column-gap: 0.25rem;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .linksContainer .links {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+  }
+
+  .linksContainer .links li {
+    font-size: 12px;
+    list-style-type: none;
+    justify-self: center;
+  }
+
+  .navbarTwo .linksContainer a {
+    font-size: 1.25rem;
+    color: var(--ternary_color);
+    padding: 1rem;
+  }
+
+  #lin {
+    font-size: 1.55rem;
+  }
+
+  .navbarTwo .linksContainer button {
+    border: none;
+    font-size: 1.25rem;
+    background: var(--navbarButton);
+    padding: 0.75rem;
+    border-radius: 2px;
+    color: var(--white);
+    box-shadow: var(--boxShadowVeryLight);
+  }
+
+  /* navbar two end*/
+
+  /* sidebar */
+  .sidebarmenu {
+    display: none;
+  }
+
+  #sidebarButton {
+    display: none;
+  }
+
   /* navbar end */
+
+  /* large screen links */
+  .linksContainerUl {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+  }
+
+  .linksContainerUlLi {
+    list-style-type: none;
+    padding: 1rem;
+  }
+
+  .linksContainerUlLi a {
+    padding: 1rem;
+    text-underline-offset: 5px;
+    color: var(--darkgray) !important;
+    font-size: 1rem !important;
+  }
+
+  .linksContainerUlLi a:hover {
+    color: black !important;
+  }
+
+  #linksContainerUlLiOne {
+    position: relative;
+    display: grid;
+  }
+
+  /* products one */
+  .productsOne {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: white;
+    box-shadow: var(--boxShadowVeryLight);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .linksContainerUlLi:first-child:hover .productsOne {
+    display: grid !important;
+  }
+
+  .productsOneUl {
+    display: grid;
+  }
+
+  .productsOneUl li {
+    list-style: none;
+  }
+
+  .productsOneUl li:first-child:hover .insuranceProducts {
+    display: grid;
+  }
+  .productsOneUl li:first-child:hover .ekycProducts {
+    display: grid;
+  }
+
+  .productsOneUl li a {
+    padding: 1rem 2rem 1rem 2rem !important;
+    display: block;
+  }
+
+  .insuranceProductsUl li a,
+  .ekycProductsUl li a {
+    color: blue !important;
+    margin-left: 1rem;
+  }
+
+  .insuranceProductsUl li a:hover,
+  .productsOneUl li a:hover,
+  .ekycProductsUl li a:hover {
+    background: rgba(0, 0, 0, 0.15);
+    border-left: 2px solid orange;
+  }
+
+  .insuranceProducts,
+  .ekycProducts {
+    display: grid;
+  }
 }
 
 /* ========================================================================================= */
@@ -402,5 +886,163 @@ nav {
   .navbarOne .rightContainer a:first-child {
     display: grid;
   }
+
+  /* navbar two */
+
+  #navTwo {
+    background: var(--white);
+    box-shadow: var(--boxShadowNavbar);
+    padding: 1rem;
+  }
+
+  .navbarTwo {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background: var(--white);
+  }
+
+  .navbarTwo .figureContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: flex-start;
+    column-gap: 1rem;
+  }
+
+  .navbarTwo .figureContainer figure {
+    width: 6rem;
+  }
+
+  .navbarTwo .linksContainer {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    column-gap: 0.25rem;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .linksContainer .links {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+  }
+
+  .linksContainer .links li {
+    font-size: 12px;
+    list-style-type: none;
+    justify-self: center;
+  }
+
+  .navbarTwo .linksContainer a {
+    color: var(--ternary_color);
+  }
+
+  #lin {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+
+  .navbarTwo .linksContainer button {
+    border: none;
+    font-size: 1.25rem;
+    background: var(--navbarButton);
+    padding: 0.75rem;
+    border-radius: 2px;
+    color: var(--white);
+    box-shadow: var(--boxShadowVeryLight);
+  }
+
+  /* navbar two end*/
+
+  /* sidebar */
+  .sidebarmenu {
+    display: none;
+  }
+
+  #sidebarButton {
+    display: none;
+  }
+
   /* navbar end */
+
+  /* large screen links */
+  .linksContainerUl {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+  }
+
+  .linksContainerUlLi {
+    list-style-type: none;
+    padding: 1rem;
+  }
+
+  .linksContainerUlLi a {
+    padding: 1rem;
+    text-underline-offset: 5px;
+    color: var(--darkgray) !important;
+    font-size: 1rem !important;
+  }
+
+  .linksContainerUlLi a:hover {
+    color: black !important;
+  }
+
+  #linksContainerUlLiOne {
+    position: relative;
+    display: grid;
+  }
+
+  /* products one */
+  .productsOne {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: white;
+    box-shadow: var(--boxShadowVeryLight);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .linksContainerUlLi:first-child:hover .productsOne {
+    display: grid !important;
+  }
+
+  .productsOneUl {
+    display: grid;
+  }
+
+  .productsOneUl li {
+    list-style: none;
+  }
+
+  .productsOneUl li:first-child:hover .insuranceProducts {
+    display: grid;
+  }
+  .productsOneUl li:first-child:hover .ekycProducts {
+    display: grid;
+  }
+
+  .productsOneUl li a {
+    padding: 1rem 2rem 1rem 2rem !important;
+    display: block;
+  }
+
+  .insuranceProductsUl li a,
+  .ekycProductsUl li a {
+    color: blue !important;
+    margin-left: 1rem;
+  }
+
+  .insuranceProductsUl li a:hover,
+  .productsOneUl li a:hover,
+  .ekycProductsUl li a:hover {
+    background: rgba(0, 0, 0, 0.15);
+    border-left: 2px solid orange;
+  }
+
+  .insuranceProducts,
+  .ekycProducts {
+    display: grid;
+  }
 }
