@@ -35,6 +35,7 @@
 
 body {
   font-family: var(--primary_font);
+  overflow-x: hidden;
 }
 
 img {
@@ -343,6 +344,12 @@ nav {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: rgb(245, 196, 127);
+  box-shadow: var(--boxShadowVeryLight);
 }
 
 .card figure {
@@ -353,6 +360,7 @@ nav {
 
 .card p {
   font-size: 0.75rem;
+  justify-self: center;
 }
 
 /* statistic section */
