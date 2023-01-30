@@ -74,7 +74,7 @@ figure {
 /* ============================================================================ */
 
 .insurance_hero {
-  background: url(./images/black_background.jpg) no-repeat center/cover fixed;
+  background: url(./images/black_background.jpg) no-repeat center/cover;
 }
 
 .insurance_container {
