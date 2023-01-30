@@ -88,9 +88,12 @@ figure {
   padding: 1rem;
 }
 
-.insurance_hero_left h1{
+.insurance_hero_left .topic h1{
   color: white;
   font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px  #EE254C;
+  font-size: 3rem;
 }
 
 .insurance_hero_left p{
