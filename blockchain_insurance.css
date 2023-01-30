@@ -213,7 +213,6 @@ nav {
 .sidebarmenu {
   background: var(--gray);
   font-size: 1rem;
-  padding: 0.5rem;
 }
 
 .sidebarmenu .sidebarmenu__ulOne li {
@@ -234,7 +233,7 @@ nav {
 } */
 
 .sidebarmenu .sidebarmenu__ulOne .submenu .sidebarmenu__ulTwo {
-  padding: 0.75rem;
+  padding: 1rem;
 }
 
 /* .sidebarmenu .sidebarmenu__ulOne .submenu .sidebarmenu__ulTwo .subSubmenu {
@@ -292,6 +291,7 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   padding: 0.25rem;
+  font-size: 0.75rem;
 }
 
 #linkOne_two {
@@ -305,6 +305,7 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   padding: 0.25rem;
+  font-size: 0.75rem;
 }
 
 .active {

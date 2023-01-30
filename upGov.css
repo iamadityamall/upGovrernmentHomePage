@@ -39,7 +39,7 @@
   );
   --boxShadowVeryLight: 0.25px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.15);
   --boxShadowNavbar: 0 0.5px 5px 1px rgba(0, 0, 0, 0.5);
-  --boxShadowWhite: 0 0 5px 1px rgba(255,255,255,1);
+  --boxShadowWhite: 0 0 5px 1px rgba(255, 255, 255, 1);
 }
 
 body {
@@ -213,7 +213,6 @@ nav {
 .sidebarmenu {
   background: var(--gray);
   font-size: 1rem;
-  padding: 0.5rem;
 }
 
 .sidebarmenu .sidebarmenu__ulOne li {
@@ -234,7 +233,7 @@ nav {
 } */
 
 .sidebarmenu .sidebarmenu__ulOne .submenu .sidebarmenu__ulTwo {
-  padding: 0.75rem;
+  padding: 1rem;
 }
 
 /* .sidebarmenu .sidebarmenu__ulOne .submenu .sidebarmenu__ulTwo .subSubmenu {
@@ -292,6 +291,7 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   padding: 0.25rem;
+  font-size: 0.75rem;
 }
 
 #linkOne_two {
@@ -305,12 +305,13 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   padding: 0.25rem;
+  font-size: 0.75rem;
 }
 
 .active {
-  -webkit-transition: all 2000ms;
-  -o-transition: all 2000ms;
-  transition: all 2000ms;
+  -webkit-transition: all 20000ms;
+  -o-transition: all 20000ms;
+  transition: all 20000ms;
   display: -ms-grid;
   display: grid;
 }
@@ -318,7 +319,7 @@ nav {
 .inactive {
   -webkit-transition: all 2000ms;
   -o-transition: all 2000ms;
-  transition: all 2000ms;
+  transition: all 20000ms;
   display: none;
 }
 
@@ -2987,7 +2988,7 @@ nav {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-radius: 5px;
-    border: 2px solid  #ec7026;
+    border: 2px solid #ec7026;
     z-index: 10000000;
   }
 
@@ -3662,7 +3663,7 @@ nav {
     border-bottom-right-radius: 10px;
     border-radius: 5px;
     z-index: 10000000;
-    border: 2px solid #ec7026
+    border: 2px solid #ec7026;
   }
 
   .linksContainerUlLi:first-child:hover .productsOne {
