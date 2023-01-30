@@ -1559,7 +1559,7 @@ nav {
     display: none !important;
     position: absolute;
     top: 100%;
-    width: 100%;
+    width: 200%;
     background: white;
     -webkit-box-shadow: var(--boxShadowVeryLight);
     box-shadow: var(--boxShadowVeryLight);
@@ -2238,7 +2238,7 @@ nav {
     display: none !important;
     position: absolute;
     top: 100%;
-    width: 100%;
+    width: 200%;
     background: white;
     -webkit-box-shadow: var(--boxShadowVeryLight);
     box-shadow: var(--boxShadowVeryLight);
@@ -2981,7 +2981,7 @@ nav {
     display: none !important;
     position: absolute;
     top: 100%;
-    width: 100%;
+    width: 200%;
     background: white;
     -webkit-box-shadow: var(--boxShadowVeryLight);
     box-shadow: var(--boxShadowVeryLight);
@@ -3655,7 +3655,7 @@ nav {
     display: none !important;
     position: absolute;
     top: 100%;
-    width: 100%;
+    width: 200%;
     background: white;
     -webkit-box-shadow: var(--boxShadowVeryLight);
     box-shadow: var(--boxShadowNavbar);

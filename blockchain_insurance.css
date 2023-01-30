@@ -68,6 +68,63 @@ figure {
 /* 320px — 480px: Mobile devices */
 /* ========================================================================================= */
 
+
+/* ============================================================================ */
+/* hero section new */
+/* ============================================================================ */
+
+.insurance_hero {
+  background: url(./images/black_background.jpg) no-repeat center / cover;
+} 
+
+.insurance_container {
+  padding: 4rem 0 4rem 0;
+  display: grid;
+}
+
+.insurance_hero_left {
+  display: grid;
+  row-gap: 3rem;
+  padding: 1rem;
+}
+
+.insurance_hero_left h1{
+  color: white;
+}
+
+.insurance_hero_left p{
+  color: white;
+}
+
+.insurance_hero_left_links {
+  display: grid;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.link {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 1rem;
+  background: #EE254C;
+  color: var(--white);
+  width: 13rem;
+  box-shadow: var(--boxShadowVeryLight);
+  text-decoration: none;
+}
+
+.link i {
+  justify-self: flex-end;
+  font-size: 0.85rem;
+}
+
+/* ============================================================================ */
+/* hero section new  End*/
+/* ============================================================================ */
+
 /* navbar section */
 nav {
   background: var(--gradientOne);
@@ -3655,7 +3712,7 @@ nav {
     display: none !important;
     position: absolute;
     top: 100%;
-    width: 100%;
+    width: 200%;
     background: white;
     -webkit-box-shadow: var(--boxShadowVeryLight);
     box-shadow: var(--boxShadowNavbar);
