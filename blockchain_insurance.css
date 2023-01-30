@@ -102,6 +102,8 @@ figure {
 .insurance_hero_left p:first-child{
   color: white;
   text-decoration: none;
+  padding: 0.25rem;
+  font-size: 0.75rem;
 }
 
 .insurance_hero_left_links {
