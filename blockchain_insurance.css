@@ -91,9 +91,8 @@ figure {
 .insurance_hero_left .topic h1{
   color: white;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 900;
   text-shadow: 1px 1px 1px  #EE254C;
-  font-size: 3rem;
 }
 
 .insurance_hero_left p{
