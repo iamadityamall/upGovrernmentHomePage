@@ -7,6 +7,28 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+/* width */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 * {
   -webkit-tap-highlight-color: transparent;
   margin: 0;
@@ -68,6 +90,409 @@ figure {
 /* Mobile Screen */
 /* 320px — 480px: Mobile devices */
 /* ========================================================================================= */
+
+/* ============================================================================ */
+/*  faq new*/
+/* ============================================================================ */
+
+.faq_section {
+  background: white;
+}
+
+.faq_section_main {
+  display: grid;
+  row-gap: 2rem;
+  padding: 4rem 0 4rem 0;
+}
+
+.faq_container_one {
+  display: grid;
+}
+
+.faq_article_one {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.faq_info {
+  display: grid;
+}
+
+.faq_question {
+  display: grid;
+  position: relative;
+}
+
+.faq_question::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  text-decoration: dashed;
+}
+
+.faq_question a {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  padding: 1rem 0 1rem 0;
+  border-bottom: 1px dashed gray;
+}
+
+.faq_question a i {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.answer_one {
+  padding: 1rem;
+  display: none;
+  row-gap: 1rem;
+  color: rgba(70, 73, 79, 1);
+}
+
+.answer_one ul {
+  padding: 0rem 1rem 0 1rem;
+  display: grid;
+}
+
+.answer_one ul li {
+  list-style-type: none;
+  position: relative;
+  font-size: 14px;
+}
+
+.answer_one ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -30px;
+  transform: translateY(50%);
+  width: 0.25rem;
+  height: 0.25rem;
+  background: red;
+  border-radius: 50%;
+  box-shadow: 0 0 0px 4px rgba(255, 0, 0, 0.1);
+}
+
+#viewall {
+  border: 2px solid red;
+  padding: 1rem;
+  justify-self: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  background: none;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 8px 0 rgb(237 53 70 / 36%);
+}
+
+#viewall:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+#viewall i {
+  justify-self: flex-end;
+}
+
+.faq_container_two {
+  padding: 3rem 1rem 3rem 1rem;
+  display: grid;
+  row-gap: 2rem;
+  border-radius: 10px;
+  background: rgb(50, 161, 93);
+  color: white;
+  box-shadow: 0 5px 8px 0 rgb(50 161 93 / 36%);
+}
+
+.faq_container_two h3 {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.faq_gallery {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+  align-items: center;
+  overflow-x: auto;
+  background: white;
+  border-radius: 10px;
+}
+
+.faq_gallery_card {
+  display: grid;
+  row-gap: 0.25rem;
+  padding: 1rem;
+  width: 15rem;
+  background-color: #f8ffdb;
+  border-radius: 10px;
+  border: 2px solid #9cff2e;
+}
+
+.faq_gallery_card figure {
+  height: 20rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.faq_gallery_card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.faq_gallery_card h4 {
+  color: gray;
+  font-size: 12px;
+}
+
+.faq_gallery_card h3 {
+  font-size: 14px;
+  color: black;
+}
+
+.faq_gallery_card:last-child {
+  background: #eaeaea;
+  display: grid;
+  font-size: 5rem;
+  color: rgb(50, 161, 93);
+}
+
+.faq_gallery_card:last-child figure {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq_gallery_card:last-child h4 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq_gallery_card:last-child button {
+  padding: 0.75rem;
+  background: white;
+  border: 2px solid #0b5ed7;
+  color: #0b5ed7;
+  font-family: var(--primary_font);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* ============================================================================ */
+/*  faq end*/
+/* ============================================================================ */
+
+/* ============================================================================ */
+/*  insurance_snapshot info new */
+/* ============================================================================ */
+
+.insurance_snapshot {
+  background: #f2f4f9;
+}
+
+.insurance_snapshot_container {
+  padding: 5rem 0rem 5rem 00rem;
+  display: grid;
+  row-gap: 5rem;
+}
+.insurance_snapshot_container_left {
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.insurance_snapshot_container_left .info {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.insurance_snapshot_container_left .info h1 {
+  font-weight: bold;
+  color: rgba(46, 45, 45, 1);
+  font-size: 2rem;
+}
+
+.insurance_snapshot_container_left .info p {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.insurance_snapshot_container_left .info_ul {
+  padding: 1rem 2rem 1rem 2rem;
+  display: grid;
+  row-gap: 1rem;
+  list-style-type: none;
+}
+
+.insurance_snapshot_container_left .info_ul li {
+  font-size: 14px;
+  color: rgba(70, 73, 79, 1);
+  list-style-type: none;
+  position: relative;
+  transition: all 200ms ease-in-out;
+  text-justify: distribute;
+}
+
+.insurance_snapshot_container_left .info_ul li::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -30px;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: red;
+  box-shadow: 0px 0px 2px 4px rgba(255, 0, 0, 0.1);
+}
+
+.stats_data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.stats_data_common {
+  padding: 1rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats_data_common h3 {
+  text-align: center;
+}
+
+.stats_data_common h3 span {
+  font-size: 1.5rem;
+}
+
+.stats_data_common p {
+  text-align: center;
+  font-size: 12px;
+}
+
+.stats_button {
+  background: transparent;
+  border: none;
+  justify-self: flex-start;
+  padding: 1rem;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container_two {
+}
+
+.element {
+  padding: 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.element::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8rem;
+  height: 8rem;
+  background: #2d9962;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.element::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8rem;
+  height: 8rem;
+  background: #2d9962;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.insurance_snapshot_container_right {
+  position: relative;
+  display: grid;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--boxShadowVeryLight);
+  border: 3px solid #2d9962;
+  border-radius: 10px;
+}
+
+.snapshot_card {
+  position: relative;
+  padding: 2rem 1rem 2rem 1rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: auto 1fr;
+  column-gap: 1rem;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgba(70, 73, 79, 1);
+}
+
+.snapshot_card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+  height: 0.5px;
+  width: 70%;
+  background: gray;
+}
+
+.snapshot_card:last-child::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 11px;
+  width: 40%;
+  background: white;
+}
+
+.snapshot_card figure {
+  background: #efefef;
+  display: grid;
+  width: 4rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.snapshot_card figure img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  filter: drop-shadow(6px 9px 6px #bbb);
+}
+
+/* ============================================================================ */
+/* insurance_snapshot info end */
+/* ============================================================================ */
 
 /* ============================================================================ */
 /* hero section new */
@@ -1007,6 +1432,212 @@ nav {
 /* media query 481px — 768px: iPads, Tablets*/
 @media screen and (max-width: 768px) and (min-width: 481px) {
   /* ============================================================================ */
+  /*  faq new*/
+  /* ============================================================================ */
+
+  .faq_section {
+    background: white;
+  }
+
+  .faq_section_main {
+    display: grid;
+    row-gap: 2rem;
+    padding: 4rem 0 4rem 0;
+  }
+
+  .faq_container_one {
+    display: grid;
+  }
+
+  .faq_article_one {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  .faq_info {
+    display: grid;
+  }
+
+  .faq_question {
+    display: grid;
+    position: relative;
+  }
+
+  .faq_question::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    text-decoration: dashed;
+  }
+
+  .faq_question a {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 1rem;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 1rem 0 1rem 0;
+    border-bottom: 1px dashed gray;
+  }
+
+  .faq_question a i {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .answer_one {
+    padding: 1rem;
+    display: none;
+    row-gap: 1rem;
+    color: rgba(70, 73, 79, 1);
+  }
+
+  .answer_one ul {
+    padding: 0rem 1rem 0 1rem;
+    display: grid;
+  }
+
+  .answer_one ul li {
+    list-style-type: none;
+    position: relative;
+    font-size: 14px;
+  }
+
+  .answer_one ul li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    transform: translateY(50%);
+    width: 0.25rem;
+    height: 0.25rem;
+    background: red;
+    border-radius: 50%;
+    box-shadow: 0 0 0px 4px rgba(255, 0, 0, 0.1);
+  }
+
+  #viewall {
+    border: 2px solid red;
+    padding: 1rem;
+    justify-self: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 8px 0 rgb(237 53 70 / 36%);
+  }
+
+  #viewall:hover {
+    background: rgba(0, 0, 0, 0.15);
+  }
+
+  #viewall i {
+    justify-self: flex-end;
+  }
+
+  .faq_container_two {
+    padding: 3rem 1rem 3rem 1rem;
+    display: grid;
+    row-gap: 2rem;
+    border-radius: 10px;
+    background: rgb(50, 161, 93);
+    color: white;
+    box-shadow: 0 5px 8px 0 rgb(50 161 93 / 36%);
+  }
+
+  .faq_container_two h3 {
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
+  .faq_gallery {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    align-items: center;
+    overflow-x: auto;
+    background: white;
+    border-radius: 10px;
+  }
+
+  .faq_gallery_card {
+    display: grid;
+    row-gap: 0.25rem;
+    padding: 1rem;
+    width: 15rem;
+    background-color: #f8ffdb;
+    border-radius: 10px;
+    border: 2px solid #9cff2e;
+  }
+
+  .faq_gallery_card figure {
+    height: 20rem;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .faq_gallery_card figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .faq_gallery_card h4 {
+    color: gray;
+    font-size: 12px;
+  }
+
+  .faq_gallery_card h3 {
+    font-size: 14px;
+    color: black;
+  }
+
+  .faq_gallery_card:last-child {
+    background: #eaeaea;
+    display: grid;
+    font-size: 5rem;
+    color: rgb(50, 161, 93);
+  }
+
+  .faq_gallery_card:last-child figure {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq_gallery_card:last-child h4 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq_gallery_card:last-child button {
+    padding: 0.75rem;
+    background: white;
+    border: 2px solid #0b5ed7;
+    color: #0b5ed7;
+    font-family: var(--primary_font);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  /* ============================================================================ */
+  /*  faq end*/
+  /* ============================================================================ */
+
+  /* ============================================================================ */
   /* hero section new */
   /* ============================================================================ */
 
@@ -1560,6 +2191,209 @@ nav {
 /* media query 769px — 1024px: Small screens, laptops*/
 @media screen and (max-width: 1024px) and (min-width: 769px) {
   /* ============================================================================ */
+  /*  insurance_snapshot info new */
+  /* ============================================================================ */
+
+  .insurance_snapshot {
+    background: #f2f4f9;
+  }
+
+  .insurance_snapshot_container {
+    padding: 5rem 0rem 5rem 0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    row-gap: 0;
+    column-gap: 5rem;
+  }
+
+  .insurance_snapshot_container_left {
+    display: grid;
+    row-gap: 0.5rem;
+  }
+
+  .insurance_snapshot_container_left .info {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  .insurance_snapshot_container_left .info h1 {
+    font-weight: bold;
+    color: rgba(46, 45, 45, 1);
+    font-size: 2rem;
+  }
+
+  .insurance_snapshot_container_left .info p {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
+  .insurance_snapshot_container_left .info_ul {
+    padding: 1rem 2rem 1rem 2rem;
+    display: grid;
+    row-gap: 1rem;
+    list-style-type: none;
+  }
+
+  .insurance_snapshot_container_left .info_ul li {
+    font-size: 14px;
+    color: rgba(70, 73, 79, 1);
+    list-style-type: none;
+    position: relative;
+    transition: all 200ms ease-in-out;
+    text-justify: distribute;
+  }
+
+  .insurance_snapshot_container_left .info_ul li::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -30px;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: red;
+    box-shadow: 0px 0px 2px 4px rgba(255, 0, 0, 0.1);
+  }
+
+  .stats_data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stats_data_common {
+    padding: 1rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stats_data_common h3 {
+    text-align: center;
+  }
+
+  .stats_data_common h3 span {
+    font-size: 1.5rem;
+  }
+
+  .stats_data_common p {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .stats_button {
+    background: transparent;
+    border: none;
+    justify-self: flex-start;
+    padding: 1rem;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .container_two {
+  }
+
+  .element {
+    padding: 0.75rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .element::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8rem;
+    height: 8rem;
+    background: #2d9962;
+    border-radius: 10px;
+    z-index: -1;
+  }
+
+  .element::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8rem;
+    height: 8rem;
+    background: #2d9962;
+    border-radius: 10px;
+    z-index: -1;
+  }
+
+  .insurance_snapshot_container_right {
+    position: relative;
+    display: grid;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--boxShadowVeryLight);
+    border: 3px solid #2d9962;
+    border-radius: 10px;
+  }
+
+  .snapshot_card {
+    position: relative;
+    padding: 2rem 1rem 2rem 1rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto 1fr;
+    column-gap: 1rem;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    color: rgba(70, 73, 79, 1);
+  }
+
+  .snapshot_card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+    height: 0.5px;
+    width: 70%;
+    background: gray;
+  }
+
+  .snapshot_card:last-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 11px;
+    width: 40%;
+    background: white;
+  }
+
+  .snapshot_card figure {
+    background: #efefef;
+    display: grid;
+    width: 4rem;
+    padding: 1rem;
+    border-radius: 50%;
+  }
+
+  .snapshot_card figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    filter: drop-shadow(6px 9px 6px #bbb);
+  }
+
+  /* ============================================================================ */
+  /* insurance_snapshot info end */
+  /* ============================================================================ */
+
+  /* ==================================================================
+  ========== */
   /* hero section new */
   /* ============================================================================ */
 
@@ -2338,6 +3172,419 @@ nav {
 
 /* media query 1025px — 1200px: Desktops, large screens*/
 @media screen and (max-width: 1200px) and (min-width: 1025px) {
+  /* ============================================================================ */
+  /*  faq new*/
+  /* ============================================================================ */
+
+  .faq_section {
+    background: white;
+  }
+
+  .faq_section_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+    column-gap: 5rem;
+    align-items: center;
+    padding: 4rem 0 4rem 0;
+  }
+
+  .faq_container_one {
+    display: grid;
+  }
+
+  .faq_article_one {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  .faq_info {
+    display: grid;
+  }
+
+  .faq_question {
+    display: grid;
+    position: relative;
+  }
+
+  .faq_question::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    text-decoration: dashed;
+  }
+
+  .faq_question a {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 1rem;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 1rem 0 1rem 0;
+    border-bottom: 1px dashed gray;
+  }
+
+  .faq_question a i {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .answer_one {
+    padding: 1rem;
+    display: none;
+    row-gap: 1rem;
+    color: rgba(70, 73, 79, 1);
+  }
+
+  .answer_one ul {
+    padding: 0rem 1rem 0 1rem;
+    display: grid;
+  }
+
+  .answer_one ul li {
+    list-style-type: none;
+    position: relative;
+    font-size: 14px;
+  }
+
+  .answer_one ul li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    transform: translateY(50%);
+    width: 0.25rem;
+    height: 0.25rem;
+    background: red;
+    border-radius: 50%;
+    box-shadow: 0 0 0px 4px rgba(255, 0, 0, 0.1);
+  }
+
+  #viewall {
+    border: 2px solid red;
+    padding: 1rem;
+    justify-self: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 8px 0 rgb(237 53 70 / 36%);
+  }
+
+  #viewall:hover {
+    background: rgba(0, 0, 0, 0.15);
+  }
+
+  #viewall i {
+    justify-self: flex-end;
+  }
+
+  .faq_container_two {
+    padding: 3rem 1rem 3rem 1rem;
+    display: grid;
+    row-gap: 2rem;
+    border-radius: 10px;
+    background: rgb(50, 161, 93);
+    color: white;
+    box-shadow: 0 5px 8px 0 rgb(50 161 93 / 36%);
+  }
+
+  .faq_container_two h3 {
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
+  .faq_gallery {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    align-items: center;
+    overflow-x: auto;
+    background: white;
+    border-radius: 10px;
+  }
+
+  .faq_gallery_card {
+    display: grid;
+    row-gap: 0.25rem;
+    padding: 1rem;
+    width: 15rem;
+    background-color: #f8ffdb;
+    border-radius: 10px;
+    border: 2px solid #9cff2e;
+  }
+
+  .faq_gallery_card figure {
+    height: 20rem;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .faq_gallery_card figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .faq_gallery_card h4 {
+    color: gray;
+    font-size: 12px;
+  }
+
+  .faq_gallery_card h3 {
+    font-size: 14px;
+    color: black;
+  }
+
+  .faq_gallery_card:last-child {
+    background: #eaeaea;
+    display: grid;
+    font-size: 5rem;
+    color: rgb(50, 161, 93);
+  }
+
+  .faq_gallery_card:last-child figure {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq_gallery_card:last-child h4 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq_gallery_card:last-child button {
+    padding: 0.75rem;
+    background: white;
+    border: 2px solid #0b5ed7;
+    color: #0b5ed7;
+    font-family: var(--primary_font);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  /* ============================================================================ */
+  /*  faq end*/
+  /* ============================================================================ */
+
+  /* ============================================================================ */
+  /*  insurance_snapshot info new */
+  /* ============================================================================ */
+
+  .insurance_snapshot {
+    background: #f2f4f9;
+  }
+
+  .insurance_snapshot_container {
+    padding: 5rem 0rem 5rem 0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    row-gap: 0;
+    column-gap: 5rem;
+  }
+  .insurance_snapshot_container_left {
+    display: grid;
+    row-gap: 0.5rem;
+  }
+
+  .insurance_snapshot_container_left .info {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  .insurance_snapshot_container_left .info h1 {
+    font-weight: bold;
+    color: rgba(46, 45, 45, 1);
+    font-size: 2rem;
+  }
+
+  .insurance_snapshot_container_left .info p {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
+  .insurance_snapshot_container_left .info_ul {
+    padding: 1rem 2rem 1rem 2rem;
+    display: grid;
+    row-gap: 1rem;
+    list-style-type: none;
+  }
+
+  .insurance_snapshot_container_left .info_ul li {
+    font-size: 14px;
+    color: rgba(70, 73, 79, 1);
+    list-style-type: none;
+    position: relative;
+    transition: all 200ms ease-in-out;
+    text-justify: distribute;
+  }
+
+  .insurance_snapshot_container_left .info_ul li::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -30px;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: red;
+    box-shadow: 0px 0px 2px 4px rgba(255, 0, 0, 0.1);
+  }
+
+  .stats_data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stats_data_common {
+    padding: 1rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stats_data_common h3 {
+    text-align: center;
+  }
+
+  .stats_data_common h3 span {
+    font-size: 1.5rem;
+  }
+
+  .stats_data_common p {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .stats_button {
+    background: transparent;
+    border: none;
+    justify-self: flex-start;
+    padding: 0.5rem;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .container_two {
+  }
+
+  .element {
+    padding: 0.75rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .element::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8rem;
+    height: 8rem;
+    background: #2d9962;
+    border-radius: 10px;
+    z-index: -1;
+  }
+
+  .element::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8rem;
+    height: 8rem;
+    background: #2d9962;
+    border-radius: 10px;
+    z-index: -1;
+  }
+
+  .insurance_snapshot_container_right {
+    position: relative;
+    display: grid;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--boxShadowVeryLight);
+    border: 3px solid #2d9962;
+    border-radius: 10px;
+  }
+
+  .snapshot_card {
+    position: relative;
+    padding: 2rem 1rem 2rem 1rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto 1fr;
+    column-gap: 1rem;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    color: rgba(70, 73, 79, 1);
+  }
+
+  .snapshot_card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+    height: 0.5px;
+    width: 70%;
+    background: gray;
+  }
+
+  .snapshot_card:last-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 11px;
+    width: 40%;
+    background: white;
+  }
+
+  .snapshot_card figure {
+    background: #efefef;
+    display: grid;
+    width: 4rem;
+    padding: 1rem;
+    border-radius: 50%;
+  }
+
+  .snapshot_card figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    filter: drop-shadow(6px 9px 6px #bbb);
+  }
+
+  /* ============================================================================ */
+  /* insurance_snapshot info end */
+  /* ============================================================================ */
+
+  /* ============================================================================ */
+  /* hero section new */
+  /* ============================================================================ */
   /* ============================================================================ */
   /* hero section new */
   /* ============================================================================ */
@@ -3183,6 +4430,417 @@ nav {
 
 /* media query 1201px and more —  Extra large screens, TV*/
 @media screen and (max-width: 1440px) and (min-width: 1201px) {
+
+  /* ============================================================================ */
+  /*  faq new*/
+  /* ============================================================================ */
+
+  .faq_section {
+    background: white;
+  }
+
+  .faq_section_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+    column-gap: 5rem;
+    align-items: center;
+    padding: 4rem 0 4rem 0;
+  }
+
+  .faq_container_one {
+    display: grid;
+  }
+
+  .faq_article_one {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  .faq_info {
+    display: grid;
+  }
+
+  .faq_question {
+    display: grid;
+    position: relative;
+  }
+
+  .faq_question::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    text-decoration: dashed;
+  }
+
+  .faq_question a {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 1rem;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 1rem 0 1rem 0;
+    border-bottom: 1px dashed gray;
+  }
+
+  .faq_question a i {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .answer_one {
+    padding: 1rem;
+    display: none;
+    row-gap: 1rem;
+    color: rgba(70, 73, 79, 1);
+  }
+
+  .answer_one ul {
+    padding: 0rem 1rem 0 1rem;
+    display: grid;
+  }
+
+  .answer_one ul li {
+    list-style-type: none;
+    position: relative;
+    font-size: 14px;
+  }
+
+  .answer_one ul li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    transform: translateY(50%);
+    width: 0.25rem;
+    height: 0.25rem;
+    background: red;
+    border-radius: 50%;
+    box-shadow: 0 0 0px 4px rgba(255, 0, 0, 0.1);
+  }
+
+  #viewall {
+    border: 2px solid red;
+    padding: 1rem;
+    justify-self: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 8px 0 rgb(237 53 70 / 36%);
+  }
+
+  #viewall:hover {
+    background: rgba(0, 0, 0, 0.15);
+  }
+
+  #viewall i {
+    justify-self: flex-end;
+  }
+
+  .faq_container_two {
+    padding: 3rem 1rem 3rem 1rem;
+    display: grid;
+    row-gap: 2rem;
+    border-radius: 10px;
+    background: rgb(50, 161, 93);
+    color: white;
+    box-shadow: 0 5px 8px 0 rgb(50 161 93 / 36%);
+  }
+
+  .faq_container_two h3 {
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
+  .faq_gallery {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    align-items: center;
+    overflow-x: auto;
+    background: white;
+    border-radius: 10px;
+  }
+
+  .faq_gallery_card {
+    display: grid;
+    row-gap: 0.25rem;
+    padding: 1rem;
+    width: 15rem;
+    background-color: #f8ffdb;
+    border-radius: 10px;
+    border: 2px solid #9cff2e;
+  }
+
+  .faq_gallery_card figure {
+    height: 20rem;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .faq_gallery_card figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .faq_gallery_card h4 {
+    color: gray;
+    font-size: 12px;
+  }
+
+  .faq_gallery_card h3 {
+    font-size: 14px;
+    color: black;
+  }
+
+  .faq_gallery_card:last-child {
+    background: #eaeaea;
+    display: grid;
+    font-size: 5rem;
+    color: rgb(50, 161, 93);
+  }
+
+  .faq_gallery_card:last-child figure {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq_gallery_card:last-child h4 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq_gallery_card:last-child button {
+    padding: 0.75rem;
+    background: white;
+    border: 2px solid #0b5ed7;
+    color: #0b5ed7;
+    font-family: var(--primary_font);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  /* ============================================================================ */
+  /*  faq end*/
+  /* ============================================================================ */
+
+
+  /* ============================================================================ */
+  /*  insurance_snapshot info new */
+  /* ============================================================================ */
+
+  .insurance_snapshot {
+    background: #f2f4f9;
+  }
+
+  .insurance_snapshot_container {
+    padding: 5rem 0rem 5rem 0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    row-gap: 0;
+    column-gap: 5rem;
+  }
+  .insurance_snapshot_container_left {
+    display: grid;
+    row-gap: 0.5rem;
+  }
+
+  .insurance_snapshot_container_left .info {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  .insurance_snapshot_container_left .info h1 {
+    font-weight: bold;
+    color: rgba(46, 45, 45, 1);
+    font-size: 2rem;
+  }
+
+  .insurance_snapshot_container_left .info p {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
+  .insurance_snapshot_container_left .info_ul {
+    padding: 1rem 2rem 1rem 2rem;
+    display: grid;
+    row-gap: 1rem;
+    list-style-type: none;
+  }
+
+  .insurance_snapshot_container_left .info_ul li {
+    font-size: 14px;
+    color: rgba(70, 73, 79, 1);
+    list-style-type: none;
+    position: relative;
+    transition: all 200ms ease-in-out;
+    text-justify: distribute;
+  }
+
+  .insurance_snapshot_container_left .info_ul li::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -30px;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: red;
+    box-shadow: 0px 0px 2px 4px rgba(255, 0, 0, 0.1);
+  }
+
+  .stats_data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stats_data_common {
+    padding: 1rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stats_data_common h3 {
+    text-align: center;
+  }
+
+  .stats_data_common h3 span {
+    font-size: 1.5rem;
+  }
+
+  .stats_data_common p {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .stats_button {
+    background: transparent;
+    border: none;
+    justify-self: flex-start;
+    padding: 1rem;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .container_two {
+  }
+
+  .element {
+    padding: 0.75rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .element::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8rem;
+    height: 8rem;
+    background: #2d9962;
+    border-radius: 10px;
+    z-index: -1;
+  }
+
+  .element::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8rem;
+    height: 8rem;
+    background: #2d9962;
+    border-radius: 10px;
+    z-index: -1;
+  }
+
+  .insurance_snapshot_container_right {
+    position: relative;
+    display: grid;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--boxShadowVeryLight);
+    border: 3px solid #2d9962;
+    border-radius: 10px;
+  }
+
+  .snapshot_card {
+    position: relative;
+    padding: 2rem 1rem 2rem 1rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto 1fr;
+    column-gap: 1rem;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    color: rgba(70, 73, 79, 1);
+  }
+
+  .snapshot_card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+    height: 0.5px;
+    width: 70%;
+    background: gray;
+  }
+
+  .snapshot_card:last-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 11px;
+    width: 40%;
+    background: white;
+  }
+
+  .snapshot_card figure {
+    background: #efefef;
+    display: grid;
+    width: 4rem;
+    padding: 1rem;
+    border-radius: 50%;
+  }
+
+  .snapshot_card figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    filter: drop-shadow(6px 9px 6px #bbb);
+  }
+
+  /* ============================================================================ */
+  /* insurance_snapshot info end */
+  /* ============================================================================ */
   /* ============================================================================ */
   /* hero section new */
   /* ============================================================================ */
@@ -3193,10 +4851,10 @@ nav {
   }
 
   .insurance_container {
-    padding: 4rem 0 4rem 0;
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
+    column-gap: 3rem;
   }
 
   .insurance_hero_left {
@@ -3956,6 +5614,421 @@ nav {
 
 /* media query 1440px and more —  Extra large screens, TV*/
 @media screen and (min-width: 1440px) {
+
+  /* ============================================================================ */
+  /*  faq new*/
+  /* ============================================================================ */
+
+  .faq_section {
+    background: white;
+  }
+
+  .faq_section_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+    column-gap: 5rem;
+    align-items: center;
+    padding: 4rem 0 4rem 0;
+  }
+
+  .faq_container_one {
+    display: grid;
+  }
+
+  .faq_article_one {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  .faq_info {
+    display: grid;
+  }
+
+  .faq_question {
+    display: grid;
+    position: relative;
+  }
+
+  .faq_question::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    text-decoration: dashed;
+  }
+
+  .faq_question a {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 1rem;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 1rem 0 1rem 0;
+    border-bottom: 1px dashed gray;
+  }
+
+  .faq_question a i {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .answer_one {
+    padding: 1rem;
+    display: none;
+    row-gap: 1rem;
+    color: rgba(70, 73, 79, 1);
+  }
+
+  .answer_one ul {
+    padding: 0rem 1rem 0 1rem;
+    display: grid;
+  }
+
+  .answer_one ul li {
+    list-style-type: none;
+    position: relative;
+    font-size: 14px;
+  }
+
+  .answer_one ul li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    transform: translateY(50%);
+    width: 0.25rem;
+    height: 0.25rem;
+    background: red;
+    border-radius: 50%;
+    box-shadow: 0 0 0px 4px rgba(255, 0, 0, 0.1);
+  }
+
+  #viewall {
+    border: 2px solid red;
+    padding: 1rem;
+    justify-self: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 8px 0 rgb(237 53 70 / 36%);
+  }
+
+  #viewall:hover {
+    background: rgba(0, 0, 0, 0.15);
+  }
+
+  #viewall i {
+    justify-self: flex-end;
+  }
+
+  .faq_container_two {
+    padding: 3rem 1rem 3rem 1rem;
+    display: grid;
+    row-gap: 2rem;
+    border-radius: 10px;
+    background: rgb(50, 161, 93);
+    color: white;
+    box-shadow: 0 5px 8px 0 rgb(50 161 93 / 36%);
+  }
+
+  .faq_container_two h3 {
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
+  .faq_gallery {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    align-items: center;
+    overflow-x: auto;
+    background: white;
+    border-radius: 10px;
+  }
+
+  .faq_gallery_card {
+    display: grid;
+    row-gap: 0.25rem;
+    padding: 1rem;
+    width: 15rem;
+    background-color: #f8ffdb;
+    border-radius: 10px;
+    border: 2px solid #9cff2e;
+  }
+
+  .faq_gallery_card figure {
+    height: 20rem;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .faq_gallery_card figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .faq_gallery_card h4 {
+    color: gray;
+    font-size: 12px;
+  }
+
+  .faq_gallery_card h3 {
+    font-size: 14px;
+    color: black;
+  }
+
+  .faq_gallery_card:last-child {
+    background: #eaeaea;
+    display: grid;
+    font-size: 5rem;
+    color: rgb(50, 161, 93);
+  }
+
+  .faq_gallery_card:last-child figure {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq_gallery_card:last-child h4 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq_gallery_card:last-child button {
+    padding: 0.75rem;
+    background: white;
+    border: 2px solid #0b5ed7;
+    color: #0b5ed7;
+    font-family: var(--primary_font);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  /* ============================================================================ */
+  /*  faq end*/
+  /* ============================================================================ */
+
+  /* ============================================================================ */
+
+  /* ============================================================================ */
+  /*  insurance_snapshot info new */
+  /* ============================================================================ */
+
+  .insurance_snapshot {
+    background: #f2f4f9;
+  }
+
+  .insurance_snapshot_container {
+    padding: 5rem 0rem 5rem 0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    row-gap: 0;
+    column-gap: 5rem;
+  }
+  .insurance_container {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+  }
+
+  .insurance_snapshot_container_left .info {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  .insurance_snapshot_container_left .info h1 {
+    font-weight: bold;
+    color: rgba(46, 45, 45, 1);
+    font-size: 2rem;
+  }
+
+  .insurance_snapshot_container_left .info p {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
+  .insurance_snapshot_container_left .info_ul {
+    padding: 1rem 2rem 1rem 2rem;
+    display: grid;
+    row-gap: 1rem;
+    list-style-type: none;
+  }
+
+  .insurance_snapshot_container_left .info_ul li {
+    font-size: 14px;
+    color: rgba(70, 73, 79, 1);
+    list-style-type: none;
+    position: relative;
+    transition: all 200ms ease-in-out;
+    text-justify: distribute;
+  }
+
+  .insurance_snapshot_container_left .info_ul li::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -30px;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: red;
+    box-shadow: 0px 0px 2px 4px rgba(255, 0, 0, 0.1);
+  }
+
+  .stats_data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stats_data_common {
+    padding: 1rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stats_data_common h3 {
+    text-align: center;
+  }
+
+  .stats_data_common h3 span {
+    font-size: 1.5rem;
+  }
+
+  .stats_data_common p {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .stats_button {
+    background: transparent;
+    border: none;
+    justify-self: flex-start;
+    padding: 1rem;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .container_two {
+  }
+
+  .element {
+    padding: 0.75rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .element::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8rem;
+    height: 8rem;
+    background: #2d9962;
+    border-radius: 10px;
+    z-index: -1;
+  }
+
+  .element::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8rem;
+    height: 8rem;
+    background: #2d9962;
+    border-radius: 10px;
+    z-index: -1;
+  }
+
+  .insurance_snapshot_container_right {
+    position: relative;
+    display: grid;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--boxShadowVeryLight);
+    border: 3px solid #2d9962;
+    border-radius: 10px;
+  }
+
+  .snapshot_card {
+    position: relative;
+    padding: 2rem 1rem 2rem 1rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto 1fr;
+    column-gap: 1rem;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    color: rgba(70, 73, 79, 1);
+  }
+
+  .snapshot_card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+    height: 0.5px;
+    width: 70%;
+    background: gray;
+  }
+
+  .snapshot_card:last-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 11px;
+    width: 40%;
+    background: white;
+  }
+
+  .snapshot_card figure {
+    background: #efefef;
+    display: grid;
+    width: 4rem;
+    padding: 1rem;
+    border-radius: 50%;
+  }
+
+  .snapshot_card figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    filter: drop-shadow(6px 9px 6px #bbb);
+  }
+
+  /* ============================================================================ */
+  /* insurance_snapshot info end */
+  /* ============================================================================ */
+
   /* ============================================================================ */
   /* hero section new */
   /* ============================================================================ */
