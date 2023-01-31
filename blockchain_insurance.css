@@ -66,8 +66,13 @@
 }
 
 body {
+  top: 0px !important;
   font-family: var(--primary_font);
   overflow-x: auto;
+}
+
+body > .skiptranslate {
+  display: none !important;
 }
 
 img {
@@ -580,7 +585,7 @@ nav {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr);
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -626,7 +631,7 @@ nav {
 .navbarOne .rightContainer {
   justify-self: flex-end;
   display: -ms-grid;
-  display: grid;
+  display: none;
   -ms-grid-columns: (auto);
   grid-template-columns: repeat(5, auto);
 }
@@ -1431,6 +1436,9 @@ nav {
 
 /* media query 481px — 768px: iPads, Tablets*/
 @media screen and (max-width: 768px) and (min-width: 481px) {
+  .navbarOne .rightContainer {
+    display: grid;
+  }
   /* ============================================================================ */
   /*  faq new*/
   /* ============================================================================ */
@@ -2190,6 +2198,10 @@ nav {
 
 /* media query 769px — 1024px: Small screens, laptops*/
 @media screen and (max-width: 1024px) and (min-width: 769px) {
+  .navbarOne .rightContainer {
+    display: grid;
+  }
+
   /* ============================================================================ */
   /*  insurance_snapshot info new */
   /* ============================================================================ */
@@ -2649,7 +2661,7 @@ nav {
     position: absolute;
     top: 100%;
     width: 200%;
-    background: #F7EFE5;
+    background: #f7efe5;
     -webkit-box-shadow: var(--boxShadowVeryLight);
     box-shadow: var(--boxShadowVeryLight);
     border-bottom-left-radius: 5px;
@@ -3172,6 +3184,9 @@ nav {
 
 /* media query 1025px — 1200px: Desktops, large screens*/
 @media screen and (max-width: 1200px) and (min-width: 1025px) {
+  .navbarOne .rightContainer {
+    display: grid;
+  }
   /* ============================================================================ */
   /*  faq new*/
   /* ============================================================================ */
@@ -3842,7 +3857,7 @@ nav {
     position: absolute;
     top: 100%;
     width: 200%;
-    background: #F7EFE5;
+    background: #f7efe5;
     -webkit-box-shadow: var(--boxShadowVeryLight);
     box-shadow: var(--boxShadowVeryLight);
     /* border-bottom-left-radius: 5px;
@@ -4430,7 +4445,9 @@ nav {
 
 /* media query 1201px and more —  Extra large screens, TV*/
 @media screen and (max-width: 1440px) and (min-width: 1201px) {
-
+  .navbarOne .rightContainer {
+    display: grid;
+  }
   /* ============================================================================ */
   /*  faq new*/
   /* ============================================================================ */
@@ -4639,7 +4656,6 @@ nav {
   /* ============================================================================ */
   /*  faq end*/
   /* ============================================================================ */
-
 
   /* ============================================================================ */
   /*  insurance_snapshot info new */
@@ -5092,11 +5108,11 @@ nav {
 
   /* products one */
   .productsOne {
-   display: none !important;
+    display: none !important;
     position: absolute;
     top: 100%;
     width: 200%;
-    background: #F7EFE5;
+    background: #f7efe5;
     -webkit-box-shadow: var(--boxShadowVeryLight);
     box-shadow: var(--boxShadowVeryLight);
     /* border-bottom-left-radius: 5px;
@@ -5613,7 +5629,9 @@ nav {
 
 /* media query 1440px and more —  Extra large screens, TV*/
 @media screen and (min-width: 1440px) {
-
+  .navbarOne .rightContainer {
+    display: grid;
+  }
   /* ============================================================================ */
   /*  faq new*/
   /* ============================================================================ */
@@ -6279,7 +6297,7 @@ nav {
     position: absolute;
     top: 100%;
     width: 200%;
-    background: #F7EFE5;
+    background: #f7efe5;
     -webkit-box-shadow: var(--boxShadowVeryLight);
     box-shadow: var(--boxShadowVeryLight);
     /* border-bottom-left-radius: 5px;

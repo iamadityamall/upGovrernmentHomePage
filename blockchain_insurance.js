@@ -8,9 +8,6 @@ let getYear = date.getFullYear();
 const year = document.getElementById("year");
 year.innerText = `${getYear} Copyright: Developed by IDBI Intech`;
 
-
-
-
 showButton.innerText = "[ + More]";
 
 showButton.addEventListener("click", function () {
@@ -38,12 +35,6 @@ questions.forEach((question) => {
     });
   });
 });
-
-
-
-
-
-
 
 const sidebarLinkOne = document.getElementById("linkOne");
 const sidebarLinkOneSubmenu = document.getElementById("submenu");
@@ -74,10 +65,48 @@ sidebarLinkOneTwo.addEventListener("click", function () {
   ulSidebarLinkOneTwo.classList.toggle("inactive");
 });
 
+window.addEventListener("load", () => {
+  googleTranslate();
+});
 
+// google translate
+async function googleTranslate() {
+  const googleTranslate = document.querySelector(".goog-te-gadget");
+  googleTranslate.style.width = "20rem";
+  googleTranslate.style.padding = "1rem";
 
+  const parent = document.querySelector(".goog-te-gadget");
+  const childs = [];
+  for (let i = 0; i < parent.children.length; i++) {
+    childs.push(parent.children[i]);
+  }
 
+  parent.innerHTML = "";
+  parent.appendChild(childs[0]);
+  parent.appendChild(childs[1]);
+  googleTranslate.removeChild(googleTranslate.children[1]);
 
+  /*
+   * parent.innerHTML = ''; childs.forEach((item) =>
+   * parent.appendChild(item));
+   */
 
+  const childElement = googleTranslate.firstChild;
+  const select = childElement.firstChild;
+  select.style.padding = "0.25rem";
+  select.style.borderRadius = "10px";
+  select.style.fontWeight = "bold";
+  select.style.border = "2px solid #E8E8E8";
 
+  const googTeCombo = document.querySelector(".goog-te-combo");
 
+  googTeCombo.addEventListener("change", function () {
+    const googleDiv = document.querySelector(".skiptranslate");
+    console.log(googleDiv);
+    googleDiv.style.display = "none";
+  });
+
+  const googleDiv = document.querySelector(".skiptranslate");
+  console.log(googleDiv);
+  googleDiv.style.display = "none";
+}
