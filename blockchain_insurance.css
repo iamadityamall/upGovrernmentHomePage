@@ -2648,14 +2648,14 @@ nav {
     display: none !important;
     position: absolute;
     top: 100%;
-    width: 100%;
-    background: white;
+    width: 200%;
+    background: #F7EFE5;
     -webkit-box-shadow: var(--boxShadowVeryLight);
     box-shadow: var(--boxShadowVeryLight);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    border-radius: 5px;
-    border: 2px solid orange;
+    /* border-radius: 5px; */
+    /* border: 2px solid orange; */
     z-index: 10000000;
   }
 
@@ -3841,13 +3841,13 @@ nav {
     display: none !important;
     position: absolute;
     top: 100%;
-    width: 100%;
-    background: white;
+    width: 200%;
+    background: #F7EFE5;
     -webkit-box-shadow: var(--boxShadowVeryLight);
     box-shadow: var(--boxShadowVeryLight);
-    border-bottom-left-radius: 5px;
+    /* border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    border: 2px solid orange;
+    border: 2px solid orange; */
     z-index: 10000000;
   }
 
@@ -5092,17 +5092,16 @@ nav {
 
   /* products one */
   .productsOne {
-    display: none !important;
+   display: none !important;
     position: absolute;
     top: 100%;
-    width: 100%;
-    background: white;
+    width: 200%;
+    background: #F7EFE5;
     -webkit-box-shadow: var(--boxShadowVeryLight);
     box-shadow: var(--boxShadowVeryLight);
-    border-bottom-left-radius: 5px;
+    /* border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    border-radius: 5px;
-    border: 2px solid #ec7026;
+    border: 2px solid orange; */
     z-index: 10000000;
   }
 
@@ -6280,14 +6279,13 @@ nav {
     position: absolute;
     top: 100%;
     width: 200%;
-    background: white;
+    background: #F7EFE5;
     -webkit-box-shadow: var(--boxShadowVeryLight);
-    box-shadow: var(--boxShadowNavbar);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-radius: 5px;
+    box-shadow: var(--boxShadowVeryLight);
+    /* border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid orange; */
     z-index: 10000000;
-    border: 2px solid #ec7026;
   }
 
   .linksContainerUlLi:first-child:hover .productsOne {
