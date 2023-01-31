@@ -585,7 +585,7 @@ nav {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr);
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1728,6 +1728,9 @@ nav {
   }
 
   /* navbar start */
+  .navbarOne {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   .navbarOne .leftContainer p {
     display: -ms-grid;
     display: grid;
@@ -2201,7 +2204,9 @@ nav {
   .navbarOne .rightContainer {
     display: grid;
   }
-
+  .navbarOne {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   /* ============================================================================ */
   /*  insurance_snapshot info new */
   /* ============================================================================ */
@@ -3186,6 +3191,9 @@ nav {
 @media screen and (max-width: 1200px) and (min-width: 1025px) {
   .navbarOne .rightContainer {
     display: grid;
+  }
+  .navbarOne {
+    grid-template-columns: 1fr 1fr 1fr;
   }
   /* ============================================================================ */
   /*  faq new*/
@@ -4448,6 +4456,9 @@ nav {
   .navbarOne .rightContainer {
     display: grid;
   }
+  .navbarOne {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   /* ============================================================================ */
   /*  faq new*/
   /* ============================================================================ */
@@ -5631,6 +5642,9 @@ nav {
 @media screen and (min-width: 1440px) {
   .navbarOne .rightContainer {
     display: grid;
+  }
+  .navbarOne {
+    grid-template-columns: 1fr 1fr 1fr;
   }
   /* ============================================================================ */
   /*  faq new*/
